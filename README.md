@@ -14,6 +14,16 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
+## Deploying to Github Pages
+
+1. Run `npm install -g angular-cli-ghpages` to install angular-cli-ghpages globally.
+
+2. Run `ng build --prod --base-href "https://kw01sg.github.io/personal-page/"` with the --base-href flag to build your project and set the correct base href location.
+
+3. Run `angular-cli-ghpages` with `ngh`.
+
+4. You can optionally add a message to the commit when deploying: `gh --message="<Commit Message>"`.
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
