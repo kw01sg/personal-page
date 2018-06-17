@@ -22,7 +22,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 3. Run `angular-cli-ghpages` with `ngh`.
 
-4. You can optionally add a message to the commit when deploying: `gh --message="<Commit Message>"`.
+4. You can optionally add a message to the commit when deploying: `ngh --message="<Commit Message>"`.
 
 ## Running unit tests
 
