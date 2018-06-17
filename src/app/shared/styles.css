@@ -1,0 +1,19 @@
+* {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.avoid-wrap {
+    display: inline-block;
+}
