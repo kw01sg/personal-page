@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
+import { NavTopBarComponent } from './nav-top-bar/nav-top-bar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlaceholderComponent
+    PlaceholderComponent,
+    NavTopBarComponent
   ],
   imports: [
     BrowserModule,

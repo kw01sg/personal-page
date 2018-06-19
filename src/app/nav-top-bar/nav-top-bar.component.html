@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+  <div id="logo-container">
+    <span>Application Title</span>
+  </div>
+
+  <div class="d-none d-sm-block" id="top-bar-nav">
+    <button mat-button>Basic</button>
+    <button mat-button>Basic</button>
+    <button mat-button>Basic</button>
+    <button mat-button>Basic</button>
+  </div>
+
+  <div class="d-sm-none" id="top-bar-menu-icon-container">
+    <button mat-button (click)="isExpand = !isExpand" (blur)="isExpand = false">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <div class="d-sm-none" id="top-bar-menu" [ngClass]="isExpand ? 'menu-expanded' : 'menu-minimized'">
+    <a class="top-bar-menu-item">Basic</a>
+    <a class="top-bar-menu-item">Basic</a>
+    <a class="top-bar-menu-item">Basic</a>
+    <a class="top-bar-menu-item">Basic</a>
+  </div>
+
+</mat-toolbar>

@@ -1,0 +1,53 @@
+mat-toolbar {
+    justify-content: space-between;
+}
+
+mat-toolbar button {
+    height: 100%;
+}
+
+mat-toolbar button:focus {
+    outline: none;
+}
+
+#top-bar-nav {
+    height: 100%;
+}
+
+#top-bar-menu-icon-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-bar-menu {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 56px;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 4px 8px 10px rgba(0,0,0,0.2);
+}
+
+.top-bar-menu-item {
+    padding: 16px;
+    cursor: pointer;
+}
+
+.top-bar-menu-item:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.menu-minimized {
+    max-height: 0;
+}
+
+.menu-expanded {
+    max-height: 600px;
+}
