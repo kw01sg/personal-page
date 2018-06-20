@@ -3,26 +3,24 @@
     <span>Application Title</span>
   </div>
 
-  <div class="d-none d-sm-block" id="top-bar-nav">
-    <button mat-button>About Me</button>
-    <button mat-button>Experience</button>
-    <button mat-button>Projects</button>
-    <button mat-button>Achievements</button>
-    <button mat-button>About This Page</button>
+  <div class="d-none d-md-block" id="top-bar-nav">
+    <button mat-flat-button routerLink="/about-me" color="primary" routerLinkActive="active">About Me</button>
+    <button mat-flat-button routerLink="/experience" color="primary" routerLinkActive="active">Experience</button>
+    <button mat-flat-button routerLink="/projects" color="primary" routerLinkActive="active">Projects</button>
+    <button mat-flat-button routerLink="/achievements" color="primary" routerLinkActive="active">Achievements</button>
+    <button mat-flat-button routerLink="/about-this-page" color="primary" routerLinkActive="active">About This Page</button>
   </div>
 
-  <div class="d-sm-none" id="top-bar-menu-icon-container">
-    <button mat-button (click)="isExpand = !isExpand" (blur)="isExpand = false">
-      <mat-icon>menu</mat-icon>
-    </button>
-  </div>
+  <button mat-button id="dropdown-menu-button" class="d-md-none btn" data-toggle='dropdown' aria-haspopup="true" aria-expanded="false">
+    <mat-icon>menu</mat-icon>
+  </button>
 
-  <div class="d-sm-none" id="top-bar-menu" [ngClass]="isExpand ? 'menu-expanded' : 'menu-minimized'">
-    <a class="top-bar-menu-item">About Me</a>
-    <a class="top-bar-menu-item">Experience</a>
-    <a class="top-bar-menu-item">Projects</a>
-    <a class="top-bar-menu-item">Achievements</a>
-    <a class="top-bar-menu-item">About This Page</a>
+  <div class="d-md-none dropdown-menu" id="top-bar-menu" aria-labelledby="dropdown-menu-button">
+    <a class="top-bar-menu-item dropdown-item" routerLink="/about-me" routerLinkActive="active">About Me</a>
+    <a class="top-bar-menu-item dropdown-item" routerLink="/experience" routerLinkActive="active">Experience</a>
+    <a class="top-bar-menu-item dropdown-item" routerLink="/projects" routerLinkActive="active">Projects</a>
+    <a class="top-bar-menu-item dropdown-item" routerLink="/achievements" routerLinkActive="active">Achievements</a>
+    <a class="top-bar-menu-item dropdown-item" routerLink="/about-this-page" routerLinkActive="active">About This Page</a>
   </div>
 
 </mat-toolbar>

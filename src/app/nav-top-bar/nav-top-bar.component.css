@@ -4,50 +4,45 @@ mat-toolbar {
 
 mat-toolbar button {
     height: 100%;
+    border-radius: 0px;
 }
 
 mat-toolbar button:focus {
     outline: none;
+    box-shadow: none;
 }
 
 #top-bar-nav {
     height: 100%;
 }
 
-#top-bar-menu-icon-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#top-bar-nav button.active {
+    background: var(--accent);
 }
 
 #top-bar-menu {
     width: 100%;
-    position: absolute;
-    left: 0px;
-    top: 56px;
-    background: white;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
     box-shadow: 4px 8px 10px rgba(0,0,0,0.2);
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    border-radius: 0;
+
+    /* to overwrite default dropdown translation*/
+    transform: translate3d(0px, 56px, 0px) !important;
 }
 
 .top-bar-menu-item {
     padding: 16px;
     cursor: pointer;
+    color: black;
 }
 
-.top-bar-menu-item:hover {
+.top-bar-menu-item:not(.active):hover {
     background-color: rgba(0,0,0,0.1);
 }
 
-.menu-minimized {
-    max-height: 0;
-}
-
-.menu-expanded {
-    max-height: 600px;
+.active {
+    background: var(--primary);
+    color: white;
 }
