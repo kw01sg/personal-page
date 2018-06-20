@@ -1,5 +1,6 @@
 mat-toolbar {
     justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 mat-toolbar button {
@@ -22,7 +23,7 @@ mat-toolbar button:focus {
 
 #top-bar-menu {
     width: 100%;
-    box-shadow: 4px 8px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     padding: 0px;
     margin: 0px;
     border: none;
