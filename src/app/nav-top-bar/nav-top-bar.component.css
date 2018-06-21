@@ -3,9 +3,28 @@ mat-toolbar {
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo-container mat-icon {
+    height: auto;
+    width: auto;
+    font-size: 2rem;
+    margin: 0 4px 0 4px;
+    cursor: default;
+}
+
+#logo-container .logo-title {
+    margin: 0 16px;
+}
+
 mat-toolbar button {
     height: 100%;
     border-radius: 0px;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 mat-toolbar button:focus {
@@ -37,6 +56,8 @@ mat-toolbar button:focus {
     padding: 16px;
     cursor: pointer;
     color: black;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 .top-bar-menu-item:not(.active):hover {
