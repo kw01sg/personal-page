@@ -19,3 +19,16 @@
 .avoid-wrap {
     display: inline-block;
 }
+
+mat-card.image-card {
+    padding-bottom: 0px;
+    margin-bottom: 1rem;
+}
+
+mat-card.image-card img.pad-image {
+    padding: 32px;
+}
+
+.page-container {
+    margin-bottom: 20px;
+}
