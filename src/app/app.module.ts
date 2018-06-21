@@ -18,7 +18,7 @@ const appRoutes: Routes = [
   // { path: 'projects', component: ProjectsComponent },
   // { path: 'achievements', component: AchievementsComponent },
   // { path: 'about-this-page', component: AppInfoComponent },
-  { path: '', redirectTo: '/about-me', pathMatch: 'full' },
+  { path: '', redirectTo: '/experience', pathMatch: 'full' },
   { path: '**', component: PlaceholderComponent }
 ];
 
