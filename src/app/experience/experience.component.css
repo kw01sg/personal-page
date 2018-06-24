@@ -1,20 +1,7 @@
-.experience-header {
-    padding-bottom: 24px;    
-}
-
-.item-container {
-    padding: 24px 0px;
-}
-
 .company-name-sm {
     font-size: 2.5rem;
 }
 
 .company-role {
     font-size: 2.1rem;
-}
-
-.item-content {
-    text-align: justify;
-    letter-spacing: 0.03125rem;
 }
