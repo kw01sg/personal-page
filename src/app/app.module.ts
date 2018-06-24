@@ -13,12 +13,12 @@ import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { AppInfoComponent } from './app-info/app-info.component';
 
 const appRoutes: Routes = [
-  // { path: 'about-me', component: PersonalInfoComponent },
+  { path: 'about-me', component: PersonalInfoComponent },
   { path: 'experience', component: ExperienceComponent },
   // { path: 'projects', component: ProjectsComponent },
   // { path: 'achievements', component: AchievementsComponent },
   // { path: 'about-this-page', component: AppInfoComponent },
-  { path: '', redirectTo: '/experience', pathMatch: 'full' },
+  { path: '', redirectTo: '/about-me', pathMatch: 'full' },
   { path: '**', component: PlaceholderComponent }
 ];
 
