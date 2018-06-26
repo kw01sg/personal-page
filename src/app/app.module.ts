@@ -12,12 +12,13 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { AppInfoComponent } from './app-info/app-info.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { AchievementComponent } from './achievements/achievement/achievement.component';
 
 const appRoutes: Routes = [
   { path: 'about-me', component: PersonalInfoComponent },
   { path: 'experience', component: ExperienceComponent },
   // { path: 'projects', component: ProjectsComponent },
-  // { path: 'achievements', component: AchievementsComponent },
+  { path: 'achievements', component: AchievementsComponent },
   // { path: 'about-this-page', component: AppInfoComponent },
   { path: '', redirectTo: '/about-me', pathMatch: 'full' },
   { path: '**', component: PlaceholderComponent }
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
     AchievementsComponent,
     PersonalInfoComponent,
     AppInfoComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+    AchievementComponent
   ],
   imports: [
     BrowserModule,
