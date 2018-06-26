@@ -11,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { AppInfoComponent } from './app-info/app-info.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
 
 const appRoutes: Routes = [
   { path: 'about-me', component: PersonalInfoComponent },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     ProjectsComponent,
     AchievementsComponent,
     PersonalInfoComponent,
-    AppInfoComponent
+    AppInfoComponent,
+    PageHeaderComponent
   ],
   imports: [
     BrowserModule,
