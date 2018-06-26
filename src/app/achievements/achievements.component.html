@@ -1,3 +1,51 @@
-<p>
-  achievements works!
-</p>
+<div class="container page-container">
+  <app-page-header [pageHeader]="'Achievements'"></app-page-header>
+
+  <mat-divider></mat-divider>
+
+  <app-achievement
+    [achievementHeader]="'Nanyang Scholarship'"
+    [achievementPeriod]="'2013 - Dec 2017'"
+    [achievementImage]="{ path: 'assets/img/material-placeholder.jpg', alt:'placeholder', isPadImage: false }">
+  </app-achievement>
+
+  <mat-divider></mat-divider>
+
+  <app-achievement
+    [achievementHeader]="'Renaissance Engineering Programme'"
+    [achievementPeriod]="'2013 - Dec 2017'"
+    [achievementImage]="{ path: 'assets/img/material-placeholder.jpg', alt:'placeholder', isPadImage: false }"
+    [achievementContent]="[
+      'Premier Scholars Programme',
+      'Dual-degree programme that awards a Bachelor of Engineering Science coupled with a Master of Science in Technology Management'
+      ]">
+  </app-achievement>
+
+  <mat-divider></mat-divider>
+
+  <app-achievement
+    [achievementHeader]="'Bosch Buildings of Tomorrow Hackathon 2017, 1st place'"
+    [achievementPeriod]="'13 – 14 May 2017'"
+    [achievementImage]="{ path: 'assets/img/material-placeholder.jpg', alt:'placeholder', isPadImage: false }"
+    [achievementContent]="[
+      'Hackathon held by Bosch in collaboration with Microsoft to challenge participants to
+      create an Internet of Things solution that makes buildings smarter, and pitch the
+      solution as a business idea',
+      'Lead Android developer for Q-less, an integrated solution to solve the seat reservation
+      problem in food courts and restaurants'
+      ]">
+  </app-achievement>
+
+  <mat-divider></mat-divider>
+
+  <app-achievement
+    [achievementHeader]="'HackTech 2016 at California Institute of Technology'"
+    [achievementPeriod]="'26 Feb – 03 Mar 2016'"
+    [achievementImage]="{ path: 'assets/img/material-placeholder.jpg', alt:'placeholder', isPadImage: false }"
+    [achievementContent]="[
+      'Developed a navigation system for the blind that provides audio instructions and
+      performs image recognition using Python'
+      ]">
+  </app-achievement>
+
+</div>
