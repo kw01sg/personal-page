@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ACHIEVEMENTS } from './achievements';
 
 @Component({
   selector: 'app-achievements',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./achievements.component.css']
 })
 export class AchievementsComponent implements OnInit {
+  private achievements = ACHIEVEMENTS;
 
   constructor() { }
 

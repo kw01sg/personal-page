@@ -1,15 +1,15 @@
 <div id="asia-risk-transfer-solutions" class="row page-item-container">
   <div class="col-lg-9">
     <div class="item-header">
-      <h1 class="display-4 d-none d-sm-block">{{ achievementHeader }}</h1>
-      <h1 class="lead d-sm-none company-name-sm">{{ achievementHeader }}</h1>
-      <p class="lead">{{ achievementPeriod }}</p>
+      <h1 class="display-4 d-none d-sm-block">{{ achievement.title }}</h1>
+      <h1 class="lead d-sm-none company-name-sm">{{ achievement.title }}</h1>
+      <p class="lead">{{ achievement.period }}</p>
     </div>
     <mat-card class="image-card">
-      <img mat-card-image [src]="achievementImage.path" [alt]="achievementImage.alt" [ngClass]="achievementImage.isPadImage ? 'pad-image' : ''">
+      <img mat-card-image [src]="achievement.image.path" [alt]="achievement.image.alt" [ngClass]="achievement.image.isPadImage ? 'pad-image' : ''">
     </mat-card>
     <div class="item-content">
-      <p *ngFor="let item of achievementContent">{{ item }}</p>
+      <p *ngFor="let item of achievement.content">{{ item }}</p>
     </div>
   </div>
 </div>
