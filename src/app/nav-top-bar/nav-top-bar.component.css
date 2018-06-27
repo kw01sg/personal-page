@@ -40,6 +40,10 @@ mat-toolbar button:focus {
     background: var(--accent);
 }
 
+#dropdown-menu-button {
+    margin-right: -16px;
+}
+
 #top-bar-menu {
     width: 100%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
