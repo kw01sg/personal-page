@@ -7,7 +7,7 @@ import { ACHIEVEMENTS } from './achievements';
   styleUrls: ['./achievements.component.css']
 })
 export class AchievementsComponent implements OnInit {
-  private achievements = ACHIEVEMENTS;
+  achievements = ACHIEVEMENTS;
 
   constructor() { }
 
