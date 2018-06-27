@@ -1,4 +1,4 @@
-<div id="asia-risk-transfer-solutions" class="row page-item-container">
+<div class="row page-item-container">
   <div class="col-lg-9">
     <div class="item-header">
       <h1 class="display-4 d-none d-sm-block">{{ achievement.title }}</h1>
@@ -6,7 +6,7 @@
       <p class="lead">{{ achievement.period }}</p>
     </div>
     <mat-card class="image-card">
-      <img mat-card-image [src]="achievement.image.path" [alt]="achievement.image.alt" [ngClass]="achievement.image.isPadImage ? 'pad-image' : ''">
+      <img mat-card-image [src]="achievement.image.path" [alt]="achievement.image.alt" [ngClass]="{ 'pad-image' : achievement.image.isPadImage }">
     </mat-card>
     <div class="item-content">
       <p *ngFor="let item of achievement.content">{{ item }}</p>
