@@ -10,7 +10,10 @@ export const EXPERIENCES: Experience[] = [
             alt: 'asia risk transfer solutions',
             isPadImage: true
         },
-        content: []
+        content: [
+            'Design, implementation and maintenance for ARTS\' suite of products',
+            'Responsible for designing and building automated tests, and working with the software development team to instrument automated testing in their workflow.'
+        ]
     },
     {
         companyName: 'Codigo, SG',
