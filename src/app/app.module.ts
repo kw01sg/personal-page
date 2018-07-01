@@ -19,6 +19,9 @@ import { TechnicalSkillsComponent } from './personal-info/technical-skills/techn
 import { TechnicalSkillComponent } from './personal-info/technical-skills/technical-skill/technical-skill.component';
 import { EducationsComponent } from './personal-info/educations/educations.component';
 import { EducationComponent } from './personal-info/educations/education/education.component';
+import { ScrollDirective } from './nav-top-bar/scroll.directive';
+
+import { WindowRef } from './shared/services/window-ref.service';
 
 const appRoutes: Routes = [
   { path: 'about-me', component: PersonalInfoComponent },
@@ -47,14 +50,17 @@ const appRoutes: Routes = [
     TechnicalSkillsComponent,
     TechnicalSkillComponent,
     EducationsComponent,
-    EducationComponent
+    EducationComponent,
+    ScrollDirective
   ],
   imports: [
     BrowserModule,
     MaterialModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    WindowRef
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
