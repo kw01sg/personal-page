@@ -14,6 +14,11 @@ import { AppInfoComponent } from './app-info/app-info.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { AchievementComponent } from './achievements/achievement/achievement.component';
 import { ExperienceComponent } from './experiences/experience/experience.component';
+import { InterestsComponent } from './personal-info/interests/interests.component';
+import { TechnicalSkillsComponent } from './personal-info/technical-skills/technical-skills.component';
+import { TechnicalSkillComponent } from './personal-info/technical-skills/technical-skill/technical-skill.component';
+import { EducationsComponent } from './personal-info/educations/educations.component';
+import { EducationComponent } from './personal-info/educations/education/education.component';
 
 const appRoutes: Routes = [
   { path: 'about-me', component: PersonalInfoComponent },
@@ -37,7 +42,12 @@ const appRoutes: Routes = [
     PersonalInfoComponent,
     AppInfoComponent,
     PageHeaderComponent,
-    AchievementComponent
+    AchievementComponent,
+    InterestsComponent,
+    TechnicalSkillsComponent,
+    TechnicalSkillComponent,
+    EducationsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

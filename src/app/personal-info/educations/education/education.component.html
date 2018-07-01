@@ -1,0 +1,14 @@
+<div class="row sub-item-container" [ngClass]="{ 'flex-row-reverse' : reverseDisplay }">
+  <div class="col-md-6">
+    <mat-card class="image-card">
+      <img mat-card-image [src]="education.image.path" [alt]="education.image.alt" [ngClass]="{ 'pad-image': education.image.isPadImage }">
+    </mat-card>
+  </div>
+  <div class="col-md-6">
+    <div class="education-item-header">
+      <p class="lead">{{ education.title }}</p>
+      <p class="lead">{{ education.period }}</p>
+    </div>
+    <p *ngFor="let item of education.content" class="item-content">{{ item }}</p>
+  </div>
+</div>

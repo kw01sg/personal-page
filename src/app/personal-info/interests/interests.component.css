@@ -1,0 +1,19 @@
+#interest-row {
+    padding-top: 1rem;
+}
+
+.interest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.interest-container .fas {
+    margin-bottom: 0.5rem;
+}
+
+.interest-text {
+    font-size: 1.5rem;
+}

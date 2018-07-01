@@ -1,0 +1,9 @@
+<mat-card class="technical-skills-card">
+  <div class="technical-skills-header">
+    <div class="technical-skills-card-title">{{ technicalSkill.title }}</div>
+  </div>
+  <img mat-card-image [src]="technicalSkill.image.path" [alt]="technicalSkill.image.alt" [ngClass]="{ 'pad-image': technicalSkill.image.isPadImage }">
+  <mat-card-content>
+    <p *ngFor="let item of technicalSkill.content">{{ item }}</p>
+  </mat-card-content>
+</mat-card>

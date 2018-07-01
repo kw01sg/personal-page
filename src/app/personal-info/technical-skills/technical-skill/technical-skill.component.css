@@ -1,0 +1,42 @@
+.technical-skills-card {
+    padding-top: 0;
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+
+.technical-skills-card * {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.technical-skills-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technical-skills-card-title {
+    font-size: 1.75rem;
+    letter-spacing: 0.05rem;
+    padding: 1rem 0;
+}
+
+@media (max-width: 576px) {
+    .technical-skills-card-title {
+        padding: 0.5rem 0;
+    }
+
+    .technical-skills-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 599px) {
+    .mat-card-image {
+        margin-top: 0;
+    }
+}
+
+.technical-skills-card p {
+    letter-spacing: 0.03125rem;
+}
