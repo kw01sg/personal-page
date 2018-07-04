@@ -4,6 +4,7 @@ export const EXPERIENCES: Experience[] = [
     {
         companyName: 'Asia Risk Transfer Solutions, SG',
         companyRole: 'Technology Analyst',
+        companyId: 'arts',
         period: 'Aug 2017 - Present',
         image: {
             path: 'assets/img/arts.png',
@@ -18,6 +19,7 @@ export const EXPERIENCES: Experience[] = [
     {
         companyName: 'Codigo, SG',
         companyRole: 'Intern Android Developer',
+        companyId: 'codigo',
         period: 'May - Aug 2017',
         image: {
             path: 'assets/img/fast-fast.jpeg',
@@ -33,6 +35,7 @@ export const EXPERIENCES: Experience[] = [
     {
         companyName: 'MSD, NJ',
         companyRole: 'Intern Web Developer',
+        companyId: 'msd',
         period: 'May – Jul 2016',
         image: {
             path: 'assets/img/msd.svg',
