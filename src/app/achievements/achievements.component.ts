@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as _ from 'lodash';
 import { ACHIEVEMENTS } from './achievements';
 import { PageNavItem } from '../page-header/page-nav/page-nav-item.model';
 import { Achievement } from './achievement/achievement.model';
