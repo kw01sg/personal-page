@@ -3,6 +3,7 @@ import { Achievement } from './achievement/achievement.model';
 export const ACHIEVEMENTS: Achievement[] = [
     {
         title: 'Nanyang Scholarship',
+        id: 'nanyang-scholarship',
         period: '2013 - Dec 2017',
         image: {
             path: 'assets/img/achievements/ntu.svg',
@@ -15,6 +16,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     },
     {
         title: 'Renaissance Engineering Programme',
+        id: 'rep',
         period: '2013 - Dec 2017',
         image: {
             path: 'assets/img/achievements/rep.jpg',
@@ -28,6 +30,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     },
     {
         title: 'Bosch Buildings of Tomorrow Hackathon 2017, 1st place',
+        id: 'bosch',
         period: '13 – 14 May 2017',
         image: {
             'path': 'assets/img/achievements/bosch.jpg',
@@ -41,6 +44,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     },
     {
         title: 'HackTech 2016 at California Institute of Technology',
+        id: 'hacktech',
         period: '26 Feb – 03 Mar 2016',
         image: {
             path: 'assets/img/achievements/hacktech.png',

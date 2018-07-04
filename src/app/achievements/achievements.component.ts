@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import * as _ from 'lodash';
 import { ACHIEVEMENTS } from './achievements';
+import { PageNavItem } from '../page-header/page-nav/page-nav-item.model';
+import { Achievement } from './achievement/achievement.model';
+import { ACHIEVEMENT_NAV_LINKS } from './achievement-nav-links';
 
 @Component({
   selector: 'app-achievements',
@@ -7,11 +11,13 @@ import { ACHIEVEMENTS } from './achievements';
   styleUrls: ['./achievements.component.css', '../shared/styles.css']
 })
 export class AchievementsComponent implements OnInit {
-  achievements = ACHIEVEMENTS;
-
+  achievements: Achievement[];
+  achievementsNavItems: PageNavItem[];
   constructor() { }
 
   ngOnInit() {
+    this.achievements = ACHIEVEMENTS;
+    this.achievementsNavItems = ACHIEVEMENT_NAV_LINKS;
   }
 
 }
