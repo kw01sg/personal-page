@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModule } from './material/material.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 import { AppComponent } from './app.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
@@ -22,6 +23,7 @@ import { EducationComponent } from './personal-info/educations/education/educati
 import { ScrollDirective } from './nav-top-bar/scroll.directive';
 
 import { WindowRef } from './shared/services/window-ref.service';
+import { PageNavComponent } from './page-header/page-nav/page-nav.component';
 
 const appRoutes: Routes = [
   { path: 'about-me', component: PersonalInfoComponent },
@@ -51,12 +53,14 @@ const appRoutes: Routes = [
     TechnicalSkillComponent,
     EducationsComponent,
     EducationComponent,
-    ScrollDirective
+    ScrollDirective,
+    PageNavComponent
   ],
   imports: [
     BrowserModule,
     MaterialModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NgxPageScrollModule
   ],
   providers: [
     WindowRef

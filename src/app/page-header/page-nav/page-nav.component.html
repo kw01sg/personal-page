@@ -1,0 +1,6 @@
+<div class="page-nav">
+  <span class='page-nav-title'>CONTENT</span>
+  <div *ngFor="let item of pageNavLinks; let i = index">
+    <a class="page-nav-link lead" pageScroll [pageScrollDuration]="200 * (i + 1)" [href]="'#' + item.id">{{ item.displayName }}</a>
+  </div>
+</div>

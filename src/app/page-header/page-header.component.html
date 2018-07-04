@@ -1,12 +1,14 @@
 <div class="page-header">
   <div class="row">
-    <div class="col-lg-9">
+    <div class="col-lg-8">
       <h1 class="display-1 page-header-title d-none d-sm-block">{{ pageHeader | titlecase }}</h1>
       <h1 class="display-4 page-header-title d-sm-none">{{ pageHeader | titlecase }}</h1>
       <!-- <mat-card class="image-card">
         <img mat-card-image src="assets/img/material-placeholder.jpg" alt="placeholder">
       </mat-card> -->
     </div>
-    <!-- <div class="col-lg-3 d-none d-sm-block">Links to different list items</div> -->
+    <div class="col-lg-4 d-none d-sm-block">
+      <app-page-nav [pageNavLinks]="pageNavLinks"></app-page-nav>
+    </div>
   </div>
 </div>

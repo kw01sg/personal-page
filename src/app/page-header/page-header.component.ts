@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { PageNavItem } from './page-nav/page-nav-item.model';
 
 @Component({
   selector: 'app-page-header',
@@ -7,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PageHeaderComponent implements OnInit {
   @Input() pageHeader: string;
+  @Input() pageNavLinks: PageNavItem[];
 
   constructor() { }
 
