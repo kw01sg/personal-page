@@ -1,5 +1,5 @@
 <div class="container page-container">
-  <app-page-header [pageHeader]="'About Me'"></app-page-header>
+  <app-page-header [pageHeader]="'About Me'" [pageNavLinks]="personalInfoNavItems"></app-page-header>
 
   <mat-divider></mat-divider>
 
@@ -24,7 +24,7 @@
 
     <mat-divider></mat-divider>
 
-    <div class="row page-item-container">
+    <div class="row page-item-container" id="education">
       <div class="col-lg-9">
         <app-educations></app-educations>
       </div>
@@ -32,7 +32,7 @@
 
     <mat-divider></mat-divider>
 
-    <div class="row page-item-container">
+    <div class="row page-item-container" id="technical-skills">
       <div class="col-lg-9 ">
         <app-technical-skills></app-technical-skills>
       </div>
@@ -40,7 +40,7 @@
 
     <mat-divider></mat-divider>
 
-    <div class="row page-item-container">
+    <div class="row page-item-container" id="interests">
       <div class="col-lg-9">
         <app-interests></app-interests>
       </div>
