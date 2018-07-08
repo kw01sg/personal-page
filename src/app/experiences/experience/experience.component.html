@@ -6,9 +6,7 @@
       <h4 class="lead company-role">{{ experience.companyRole }}</h4>
       <p class="lead">{{ experience.period }}</p>
     </div>
-    <mat-card class="image-card">
-      <img mat-card-image class="pad-image" [src]="experience.image.path" [alt]="experience.image.alt" [ngClass]="{ 'pad-image' : experience.image.isPadImage }">
-    </mat-card>
+    <app-image-card [image]="experience.image"></app-image-card>
     <div class="item-content">
       <p *ngFor="let item of experience.content">{{ item }}</p>
     </div>

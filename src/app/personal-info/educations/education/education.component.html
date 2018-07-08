@@ -1,8 +1,6 @@
 <div class="row sub-item-container" [ngClass]="{ 'flex-row-reverse' : reverseDisplay }">
   <div class="col-md-6">
-    <mat-card class="image-card">
-      <img mat-card-image [src]="education.image.path" [alt]="education.image.alt" [ngClass]="{ 'pad-image': education.image.isPadImage }">
-    </mat-card>
+    <app-image-card [image]="education.image"></app-image-card>
   </div>
   <div class="col-md-6">
     <div class="education-item-header">
