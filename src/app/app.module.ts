@@ -24,6 +24,7 @@ import { ScrollDirective } from './nav-top-bar/scroll.directive';
 
 import { WindowRef } from './shared/services/window-ref.service';
 import { PageNavComponent } from './page-header/page-nav/page-nav.component';
+import { ImageCardComponent } from './image-card/image-card.component';
 
 const appRoutes: Routes = [
   { path: 'about-me', component: PersonalInfoComponent },
@@ -54,7 +55,8 @@ const appRoutes: Routes = [
     EducationsComponent,
     EducationComponent,
     ScrollDirective,
-    PageNavComponent
+    PageNavComponent,
+    ImageCardComponent
   ],
   imports: [
     BrowserModule,

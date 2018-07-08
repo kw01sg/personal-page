@@ -1,0 +1,25 @@
+mat-card.image-card {
+    padding-bottom: 0px;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(-15%);
+}
+
+mat-card.image-card.load-finish {
+    opacity: 1;
+    transform: translate(0);
+    transition: transform 0.4s ease-in-out 0.3s, opacity 0.4s ease-in-out 0.3s;
+}
+
+mat-card.image-card img.pad-image {
+    padding: 32px;
+}
+
+#image-spinner {
+    height: 240px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+}

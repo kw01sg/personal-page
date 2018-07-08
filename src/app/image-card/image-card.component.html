@@ -1,0 +1,6 @@
+<div id="image-spinner" class="la-timer la-dark la-3x" *ngIf="!isLoadFinish">
+  <div></div>
+</div>
+<mat-card class="image-card" [ngClass]="{ 'load-finish': isLoadFinish }">
+  <img mat-card-image [src]="image.path" [alt]="image.alt" (load)="isLoadFinish = true" [ngClass]="{ 'pad-image': image.isPadImage }">
+</mat-card>
